@@ -225,8 +225,6 @@ function Search() {
           <br />
           <h3 style={{ fontSize: "x-large" }}>Our Timings</h3>
           <marquee
-            onmouseout="this.start()"
-            onMouseOver="this.stop()"
             behavior="scroll"
             direction="up"
             scrollamount={2}
@@ -258,8 +256,6 @@ function Search() {
             behavior="scroll"
             direction="up"
             scrollamount={2}
-            onmouseout="this.start()"
-            onMouseOver="this.stop()"
           >
             <ul
               style={{
@@ -306,8 +302,6 @@ function Search() {
             behavior="scroll"
             direction="up"
             scrollamount={2}
-            onmouseout="this.start()"
-            onMouseOver="this.stop()"
           >
             <ul
               style={{
