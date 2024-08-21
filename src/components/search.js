@@ -71,58 +71,75 @@ function Search() {
         </div>
       </div>
       <div className="seperate">
-        <div className="NAVlinks" style={{ display: showMenu }} id="NAVlinks">
-          <div
-            id="secParent"
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              width: "100%",
-            }}
-          >
-            <a href="MandirHome">
-              <i className="fa-solid fa-house" />
-            </a>
-            <button
-              onClick={toggleMenu}
-              style={{ backgroundColor: "#ffa550", border: "none" }}
-              id="BTon"
-            >
-              <i class="fa-solid fa-xmark fa-2xl"></i>
-            </button>
-          </div>
-          <div className="dropdown">
-            <button>About us ⌄</button>
-            <div className="content">
-              <a href="#">Our story</a>
-              <a href="#">Mandir</a>
-              <a href="#">History</a>
-              <a href="#">Contact Us</a>
+        <div
+          className="NAVlinks"
+          style={{
+            marginLeft: showMenu == "block" ? "50%" : "100%",
+            display: "block",
+            transition: "1s",
+          }}
+          id="NAVlinks"
+        >
+          <ul id="ulNav">
+            <div id="secParent">
+              <a href="MandirHome">
+                <i className="fa-solid fa-house" />
+              </a>
+              <button
+                onClick={toggleMenu}
+                style={{ backgroundColor: "#ffa550", border: "none" }}
+                id="BTon"
+              >
+                <i class="fa-solid fa-xmark fa-2xl"></i>
+              </button>
             </div>
-          </div>
-          <a href="payment">Donate</a>
-          <div className="dropdown">
-            <button>Events ⌄</button>
-            <div className="content">
-              <a href="#">Upcoming Events</a>
-              <a href="#">Calendar</a>
-            </div>
-          </div>
-          <a href="#">Photo Gallery</a>
-          <a href="#">General Information</a>
-          <div className="dropdown">
-            <button>Online Services ⌄</button>
-            <div className="content">
-              <a href="#">Garlands for Baba</a>
-              <a href="#">Padukas at worship for home</a>
-              <a href="#">Offering Shawl</a>
-              <a href="#">Offering Prasad</a>
-              <a href="#">Anadhaan</a>
-              <a href="#">Volunteer at Baba's Mandir</a>
-            </div>
-          </div>
+
+            <li>
+              <div className="dropdown">
+                <button>About us ⌄</button>
+                <div className="content">
+                  <a href="#">Our story</a>
+                  <a href="#">Mandir</a>
+                  <a href="#">History</a>
+                  <a href="#">Contact Us</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="payment">Donate</a>
+            </li>
+            <li>
+              <div className="dropdown">
+                <button>Events ⌄</button>
+                <div className="content">
+                  <a href="#">Upcoming Events</a>
+                  <a href="#">Calendar</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#">Photo Gallery</a>
+            </li>
+            <li>
+              <a href="#">General Information</a>
+            </li>
+            <li>
+              <div className="dropdown">
+                <button>Online Services ⌄</button>
+                <div className="content">
+                  <a href="#">Garlands for Baba</a>
+                  <a href="#">Padukas at worship for home</a>
+                  <a href="#">Offering Shawl</a>
+                  <a href="#">Offering Prasad</a>
+                  <a href="#">Anadhaan</a>
+                  <a href="#">Volunteer at Baba's Mandir</a>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
+
       <br />
       <br />
       <div
@@ -252,11 +269,7 @@ function Search() {
           <br />
           <br />
           <h2 style={{ fontSize: "x-large" }}>Upcoming Events</h2>
-          <marquee
-            behavior="scroll"
-            direction="up"
-            scrollamount={2}
-          >
+          <marquee behavior="scroll" direction="up" scrollamount={2}>
             <ul
               style={{
                 listStyle: "none",
@@ -298,11 +311,7 @@ function Search() {
             Notice to Devotees
           </h2>
           <br />
-          <marquee
-            behavior="scroll"
-            direction="up"
-            scrollamount={2}
-          >
+          <marquee behavior="scroll" direction="up" scrollamount={2}>
             <ul
               style={{
                 listStyle: "none",
